@@ -5,6 +5,7 @@
   --main-blue: #4d5ae5;
   --white: #ffffff;
   --light-purple: #f4f4fd;
+  --green-focus-link: #31d0aa;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -40,7 +41,6 @@ img {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: red solid 1px;
 }
 
 .link {
@@ -157,6 +157,13 @@ img {
   background-color: var(--title-color);
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/main-page/hero-img.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -172,6 +179,15 @@ img {
 }
 
 /* ========================VALUES======================== */
+
+.value-icon-bg {
+  background-color: var(--light-purple);
+  border-radius: 4px;
+  height: 112px;
+}
+
+.value-icon {
+}
 
 .value {
   padding-top: 120px;
@@ -290,6 +306,71 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin-bottom: 8px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--main-blue);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--green-focus-link);
+  outline: 0px;
+}
+
+/* =============   CUSTOMERS   ============ */
+
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  justify-content: center;
+}
+
+.customers-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-color);
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #8e8f99;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+  fill: var(--hover-color);
+  border-color: var(--hover-color);
 }
 
 /* ===============FOOTER========================= */
@@ -322,6 +403,23 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-purple);
+}
+
+.footer-cotainer {
+  display: flex;
+}
+
+.left-side-footer {
+  margin-right: 120px;
+}
+
+.footer-social-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
 }
 
 /* ================Portfolio======================= */
