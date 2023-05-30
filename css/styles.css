@@ -6,6 +6,7 @@
   --white: #ffffff;
   --light-purple: #f4f4fd;
   --green-focus-link: #31d0aa;
+  --customers: #8e8f99;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -70,6 +71,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -154,6 +157,7 @@ img {
 }
 
 .hero {
+  max-width: 1440px;
   background-color: var(--title-color);
   padding-top: 188px;
   padding-bottom: 188px;
@@ -164,6 +168,7 @@ img {
     url('../images/main-page/hero-img.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -193,6 +198,11 @@ img {
 .value {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.value-icon {
+  width: 64px;
+  height: 64px;
 }
 
 .visually-hidden {
@@ -316,6 +326,10 @@ img {
   gap: 24px;
 }
 
+.social-list-icon {
+  fill: var(--light-purple);
+}
+
 .social-list-link {
   display: flex;
   justify-content: center;
@@ -328,7 +342,7 @@ img {
 
 .social-list-link:hover,
 .social-list-link:focus {
-  background-color: var(--green-focus-link);
+  background-color: var(--hover-color);
   outline: 0px;
 }
 
@@ -351,6 +365,10 @@ img {
   color: var(--title-color);
 }
 
+.customers-icon {
+  fill: currentColor;
+}
+
 .customers-list {
   display: flex;
   justify-content: center;
@@ -361,7 +379,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #8e8f99;
+  color: var(--customers);
   width: 168px;
   height: 88px;
   border: 1px solid #8e8f99;
@@ -370,7 +388,7 @@ img {
 
 .customers-list-link:hover,
 .customers-list-link:focus {
-  fill: var(--hover-color);
+  color: var(--hover-color);
   border-color: var(--hover-color);
 }
 
@@ -408,6 +426,7 @@ img {
 
 .footer-cotainer {
   display: flex;
+  gap: 16px;
 }
 
 .left-side-footer {
@@ -415,6 +434,7 @@ img {
 }
 
 .footer-social-title {
+  align-items: baseline;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -424,6 +444,10 @@ img {
 }
 
 /* ================Portfolio======================= */
+
+.portfolio-link {
+  display: block;
+}
 
 .portfolio {
   padding-top: 96px;
@@ -445,8 +469,8 @@ img {
   background-color: var(--hover-color);
   color: var(--white);
   border: 1px solid transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list {
